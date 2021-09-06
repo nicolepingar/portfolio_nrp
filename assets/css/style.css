@@ -1,7 +1,9 @@
+/* pink background on entire page  */
 body {
     background-color: #E37383;
 }
 
+/* styles and positions header section */
 header {
     display: flex;
     justify-content: space-between;
@@ -13,16 +15,18 @@ header {
     align-items: center;
 }
 
+/* makes name bigger */
 h1 {
     font-size: 50px;
 }
 
+
 ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     flex-direction: row;
     padding: 10px;
- 
 }
 
 li {   
@@ -40,11 +44,67 @@ main {
     color: white;
 }
 
-.about-me {
+.about-me, .work, .contact-me {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 25px;
+    align-items: center;
+    flex-flow: row;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 10px;
+    flex-basis: 75%;
 }
 
 p {
     border-style: double;
+    flex-basis: 75%;
+    padding: 10px;
+    
 }
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 75%;   
+}
+
+
+h2 {
+    border-style: double;
+    border-color: white;
+    padding: 5px;
+    
+}
+
+.placeholder {
+    flex: 0 0 400px;
+    flex-grow: 1;
+}
+
+.placeholder h3 {
+    background-color: white;
+    color: #f7a583;
+    display: inline;
+    position: relative;
+    left: 206px;
+    bottom: 13px;
+}
+
+.horiseon h3 {
+    background-color: white;
+    color: #f7a583;
+    display: inline;
+    position: relative;
+    left: 268px;
+    bottom: 13px;
+}
+
+
