@@ -55,10 +55,11 @@ main {
     font-size: 25px;
     align-items: center;
 }
+
 /* formats and styles */
 p {
     border-style: double;
-    flex-basis: 75%;
+    flex-basis: 33%;
     padding: 10px;
     background-color: white;
     color: #f7a583;
@@ -70,8 +71,9 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex: 0 2 75%;   
+    flex: 0 2 50%;    
 }
+
 /* formats all h2 headers */
 h2 {
     border-style:double;
@@ -85,15 +87,26 @@ h2 {
     flex: 0 2 400px;
     flex-grow: 1;
 }
-/* !!!!!!!!!!!!!add left or bottom, groups all 4 together  */
-.placeholder h3, .horiseon h3 {
+
+aside {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-right: 15px;
+}
+
+.horiseon, .placeholder {
     background-color: white;
     color: #f7a583;
-    display: inline;
-    position: absolute;
-    padding: 10px;
-    z-index: 1;
-}
+   /* display: inline; */
+    position: absolute; 
+    bottom: 8px;
+    left: 16px;
+    /* padding: 10px;
+    z-index: 1; */
+    }
+   
+
 /* formats list items horizonal, spaces list items, and removes bullets */
 .info {
     display: inline-flex;
@@ -121,19 +134,15 @@ footer {
 }
 
 
+
 /* hover over links and colors reverse */
 li:hover {
     background-color: #f7a583;
 }
-
 a:hover {
     color: white;
 }
 /* hover over cards and they decrease in size */
-.placeholder:hover {
-    transform: scale(0.8);
-}
-
-.horiseon:hover {
+aside:hover {
     transform: scale(0.8);
 }
